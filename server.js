@@ -59,7 +59,7 @@ app.post('/generate-model/:option', upload.single('file'), async (req, res) => {
 
     formData.append('type', type); // Include the type field
 
-    const apiKey = 'YOUR_API_KEY'; // Replace with your actual API key
+    const apiKey = 'KEY_HERE'; // Replace with your actual API key
     const config = {
       headers: {
         'Authorization': `Bearer ${apiKey}`,
