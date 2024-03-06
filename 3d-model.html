@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tripo3D AI - 3D Model Generator</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <a href="index.html">
+        <img src="images/logo.png" alt="Logo" id="logo">
+    </a>
+    <header>
+        <h1>Tripo3D AI - 3D Model Generator</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html" class="btn">Home</a></li>
+                <li><a href="3d-model.html" class="btn">3D Model</a></li>
+                <li><a href="animations.html" class="btn">Animations</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="container">
+        <h2>Choose your option:</h2>
+        <form id="uploadForm" enctype="multipart/form-data">
+            <select id="option" name="option">
+                <option value="none">None</option> <!-- New option for "None" -->
+                <option value="text">Text to 3D Model</option>
+                <option value="image">Image to 3D Model</option>
+            </select>
+            <div id="textUpload" style="display: none;">
+                <label for="textInputField">Enter text:</label>
+                <input type="text" id="textInputField" name="text">
+            </div>
+            <div id="imageUpload" style="display: none;">
+                <input type="file" id="fileInput" name="file">
+                <label for="fileInput" class="btn">Choose Image</label>
+                <img id="imagePreview" style="display: none;">
+            </div>
+            <button type="submit" class="btn">Generate 3D Model</button>
+        </form>
+    </div>
+
+    <div class="loading" id="loading">
+        Loading...
+        <progress id="progress" value="0" max="100"></progress>
+    </div>
+
+    <div class="model" id="model">
+        <!-- 3D model placeholder -->
+    </div>
+
+    <div class="limits" id="limits">
+        <p>Rough: <span id="draftLimit">0/200</span></p>
+        <p>Refine: <span id="refineLimit">0/50</span></p>
+    </div>
+
+    <script src="client.js"></script>
+</body>
+</html>

@@ -1,0 +1,153 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+    color: #000;
+}
+
+header {
+    background-color: #000;
+    color: #eede05;
+    padding: 20px 0;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 50px; /* Adjust the size as needed */
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 10px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+nav ul li a:hover {
+    color: #eede05;
+}
+
+.container {
+    max-width: 600px;
+    margin: auto;
+    padding: 20px;
+    background-color: #eede05;
+    border-radius: 20px;
+    box-shadow: 10 0 -25px rgba(0, 0, 0, 0.1);
+}
+
+.container h2 {
+    margin-top: 0;
+}
+
+.container form {
+    margin-bottom: 20px;
+}
+
+.container label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.container input[type="text"],
+.container input[type="file"],
+.container select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #fff;
+    color: #000;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.container select option {
+    background-color: #fff;
+    color: #000;
+}
+
+.container .btn {
+    background-color: #000;
+    color: #eede05;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.container .btn:hover {
+    background-color: #666;
+}
+
+.loading {
+    display: none;
+    text-align: center;
+    padding: 10px;
+    background-color: #eede05;
+    margin-bottom: 20px;
+}
+
+.loading progress {
+    width: 100%;
+}
+
+.model {
+    display: none;
+    text-align: center;
+    padding: 20px;
+    background-color: #eede05;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#fileInput {
+    display: none; /* Hide the file input */
+}
+
+#imagePreview {
+    display: none;
+    width: 50%; /* Set the width to 50% of the container */
+    margin: auto; /* Center the image horizontally */
+    max-width: 100%; /* Set the maximum width to prevent the image from overflowing */
+}
+
+#logo {
+    position: absolute;
+    top: -20px;
+    left: 20px;
+    width: 200px; /* Adjust the width as needed */
+    height: auto; /* Maintain aspect ratio */
+}
+
+/* Shadow Box for Reference */
+.reference-box {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 10px;
+    margin-bottom: 20px;
+}
+
+/* Shadow Box for Model */
+.model-box {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 10px;
+    margin-bottom: 20px;
+}
+
